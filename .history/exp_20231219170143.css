@@ -1,10 +1,9 @@
 nav {
-    background-color: rgb(0, 255, 55);
+    background-color: rgb(0, 255, 128);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    
 }
 
 .logo a {
@@ -29,7 +28,6 @@ nav {
     color: black;
     text-decoration: none;
     margin-right: 20px;
-    display: flex; 
 }
 
 .banner {
