@@ -71,6 +71,20 @@ footer {
     border: 1px solid #ccc;
   }
   
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    /* Your CSS rules for mobile screens */
+}
+
+/* For tablets: */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Your CSS rules for tablet screens */
+}
+
+/* For desktops/laptops: */
+@media only screen and (min-width: 769px) {
+    /* Your CSS rules for desktop/laptop screens */
+}
 
 
 
