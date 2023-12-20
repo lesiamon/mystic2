@@ -126,4 +126,31 @@ document.getElementById("modal-close-button").addEventListener("click", function
     closeModal('modal');
 });
 
+$(document).ready(function() {
+    // Function to toggle classes based on screen size
+    function toggleClasses() {
+        var screenWidth = $(window).width();
+
+        // Check if the screen width is less than or equal to 767px (small screens)
+        if (screenWidth <= 767) {
+            // Add or remove classes for small screens
+            $("header").addClass("small-screen-header").removeClass("large-screen-header");
+            $(".horizontal-menu").addClass("small-screen-menu").removeClass("large-screen-menu");
+            $(".horizontal-menu li").addClass("small-screen-menu-item").removeClass("large-screen-menu-item");
+        } else {
+            // Add or remove classes for large screens
+            $("header").addClass("large-screen-header").removeClass("small-screen-header");
+            $(".horizontal-menu").addClass("large-screen-menu").removeClass("small-screen-menu");
+            $(".horizontal-menu li").addClass("large-screen-menu-item").removeClass("small-screen-menu-item");
+        }
+    }
+
+    // Initial toggle on page load
+    toggleClasses();
+
+    // Re-run toggleClasses on window resize
+    $(window).resize(function() {
+        toggleClasses();
+    });
+});
 
