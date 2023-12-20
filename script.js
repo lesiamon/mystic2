@@ -126,3 +126,30 @@ document.getElementById("modal-close-button").addEventListener("click", function
     closeModal('modal');
 });
 
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column; /* Stack header items vertically on small screens */
+        text-align: center; /* Center text in the header on small screens */
+    }
+
+    .horizontal-menu {
+        flex-direction: column; /* Stack menu items vertically on small screens */
+        text-align: center; /* Center text in the menu on small screens */
+    }
+
+    .horizontal-menu li {
+        margin-right: 0; /* Remove margin between menu items on small screens */
+        margin-bottom: 10px; /* Add space below each menu item */
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Add styles specific to medium screens here */
+}
+
+/* Large screens (laptops/desktops) */
+@media only screen and (min-width: 1024px) {
+    /* Add styles specific to large screens here */
+}
+
