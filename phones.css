@@ -258,3 +258,28 @@ nav {
     flex: 0;
     tab-size: 30px;
 }
+
+@media only screen and (max-width: 767px) {
+    nav ul {
+        flex-direction: row; /* Display navigation items horizontally on small screens */
+        flex-wrap: wrap; /* Allow items to wrap onto a new line if necessary */
+        justify-content: space-around; /* Distribute space around navigation items */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin between list items on small screens */
+        margin-bottom: 10px; /* Add space below each list item */
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav ul li {
+        font-size: 14px; /* Adjust font size for medium screens if needed */
+    }
+}
+
+/* Large screens (laptops/desktops) */
+@media only screen and (min-width: 1024px) {
+    /* Add any additional styles for large screens here */
+}
