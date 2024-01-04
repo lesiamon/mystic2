@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="phones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="stylesheet" type="text/css" href="Nav.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="bigcard.css">
+   
+    
+    <title>Phone Services</title>
+
+    <body>
+    <header>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <a href="index.html" class="home-link">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+            <input type="text" class="search-input" id="search" placeholder="Search...">
+            <select class="search-dropdown" id="category">
+                <option value="all">All Categories</option>
+                <option value="mobile">Mobile Phones</option>
+                <option value="television">Television</option>
+                <!-- Add more options as needed -->
+            </select>
+            <a href="your-search-action.html">
+                <i class="fa fa-search search-icon" aria-hidden="true"></i> <!-- Font Awesome search icon -->
+            </a>
+            <a href="Cart.html" class="cart-link">
+                <i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+
+        </header>
+    </body>  
+    
+
+
+        <nav>
+            <ul>
+                <li><a href="phone.html">Samsung</a></li>
+                <li><a href="Apple.html">Apple</a></li>
+                <li><a href="Xiaomi.html">Xiaomi</a></li>
+                <li><a href="Google.html">Google</a></li>
+                <li><a href="Oppo.html">Oppo</a></li>
+                <li><a href="Oneplus.html">Oneplus</a></li>
+                <li><a href="Tecno.html">Tecno</a></li>
+                <li><a href="Nokia.html">Nokia</a></li>
+                <li><a href="Infinix.html">Infinix</a></li>
+                <li><a href="Itel.html">Itel</a></li>
+                <li><a href="Vivo.html">Vivo</a></li>
+                <li><a href="Realme.html">Realme</a></li>
+                <li><a href="Huawei.html">Huawei</a></li>
+            </ul>
+        </nav>
+</header>
+
+ <nav>
+ <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="modal-close-button">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+        
+        </nav>
+    </header>
+    
+
+    <div class="card-container">
+        <div class="Realme">
+            <img src="Realme-10-300x300.webp">
+            <p>
+        
+            </p>
+
+    
+       
+        </div>
+            <div id="buyModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeBuyModal()">&times;</span>
+                    <h3>How would you like to buy?</h3>
+                    <a href="https://web.whatsapp.com/=0712671172" target="_blank">
+                        <button class="buy-option">WhatsApp (App)</button>
+                      </a>
+                    <button class="buy-option" onclick="buyViaWebsite()">Website</button>
+                    <button class="buy-option" onclick="buyViaOthers()">Others</button>
+                </div>
+        </div>
+
+        <div class="card card-2">
+            <li><strong>"Realme-GT5</strong></li>
+            <img src="Realme-GT5-Black-1-300x300.webp">
+            <p>
+                <ul>
+                    <li><strong>Ksh 58,500</strong></li>
+                </ul>
+            </p>
+            <div class="add-to-cart">
+                <button class="add-button"><i class="fa fa-plus"></i></button>
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+
+        <div class="card card-17">
+            <li><strong>Realme-10</strong></li>
+            <img src="Realme-10-300x300.webp">
+            <p>
+                <ul>
+                    <li><strong>Ksh 32,500</strong></li>
+                </ul>
+            </p>
+            <div class="add-to-cart">
+                <button class="add-button"><i class="fa fa-plus"></i></button>
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+
+        <div class="card card-18">
+            <li><strong>Realme-C55</strong></li>
+            <img src="Realme-C55-300x300.webp">
+            <p>
+                <ul>
+                    <li><strong>Ksh 27,500</strong></li>
+                </ul>
+            </p>
+            <div class="add-to-cart">
+                <button class="add-button"><i class="fa fa-plus"></i></button>
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+        <div class="card card-19">
+            <li><strong>Realme-9i</strong></li>
+
+            <img src="Realme-9i-300x300.webp">
+            <p>
+                <ul>
+                    <li><strong>Ksh 25,500</strong></li>
+                </ul>
+            </p>
+            <div class="add-to-cart">
+                <button class="add-button"><i class="fa fa-plus"></i></button>
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card card-4">
+        <li><strong>Realme-C53</strong></li>
+
+        <img src="Realme-C53-Black-1-300x300.webp">
+        <p>
+            <ul>
+                <li><strong>Ksh 22,500 </strong></li>
+            </ul>
+        </p>
+
+        <div class="add-to-cart">
+            <button class="add-button"><i class="fa fa-plus"></i></button>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+</div>
+
+<div class="card card-5">
+    <li><strong>Realme-C35</strong></li>
+
+    <img src="Realme-C35-300x300.webp">
+    <p>
+        <ul>
+            <li><strong>Ksh 22,000</strong></li>
+        </ul>
+    </p>
+     <div class="add-to-cart">
+                <button class="add-button"><i class="fa fa-plus"></i></button>
+                <button class="buy-button">Buy</button>
+            </div>
+</div>
+</div>
+
+<div class="card card-6">
+    <li><strong>Realme-C51</strong></li>
+
+    <img src="Realme-C51-Black-1-300x300.webp">
+    <p>
+        <ul>
+            <li><strong>Ksh 19,800</strong></li>
+        </ul>
+    </p>
+    <div class="add-to-cart">
+        <button class="add-button"><i class="fa fa-plus"></i></button>
+        <button class="buy-button">Buy</button>
+    </div>
+</div>
+</div>
+
+<div class="card card-7">
+    <li><strong>Realme-C33</strong></li>
+
+    <img src="Realme-C33-300x300.webp">
+    <p>
+        <ul>
+            <li><strong>Ksh 19,500</strong></li>
+        </ul>
+    </p>
+    <div class="add-to-cart">
+        <button class="add-button"><i class="fa fa-plus"></i></button>
+        <button class="buy-button">Buy</button>
+    </div>
+</div>
+</div>
+
+<div class="card card-8">
+    <li><strong>Realme-C30s</strong></li>
+
+    <img src="Realme-C30s-300x300.webp">
+    <p>
+        <ul>
+            <li><strong>Ksh 12,000</strong></li>
+        </ul>
+    </p>
+    <div class="add-to-cart">
+        <button class="add-button"><i class="fa fa-plus"></i></button>
+        <button class="buy-button">Buy</button>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Your Website. All rights reserved.
+        </div>
+    </footer>
+    </html>
+
+

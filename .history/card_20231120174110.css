@@ -1,0 +1,113 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    max-height: 250px;
+    
+}
+
+.card.expanded {
+    flex: 0 1 calc(50% - 20px);
+    width: 50%;
+    max-width: none;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    transition: transform 0.5s; 
+    transform: rotate(360deg); /* Apply rotation to the image */
+}
+
+.card.rotate-360 img {
+    transform: rotate(360deg); /* Apply rotation to the image */
+}
+
+
+.card h3 {
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 20;
+    top: 0;
+    width: 70%;
+    height: auto;
+    
+
+}
+
+.modal-content {
+    background-color: #f2f2f2;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style the plus button within the cart link */
+.cart-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the cart icon */
+  .cart-icon {
+    font-size: 24px;
+    color: #333; /* Change the color to your preference */
+  }
+  
+  /* Style the plus button */
+  .cart-icon::before {
+    content: "+"; /* Use a plus sign or your preferred symbol */
+    font-size: 20px; /* Adjust the size as needed */
+    color: #fff; /* Change the color to your preference */
+    background-color: #007bff; /* Change the background color to your preference */
+    border-radius: 50%; /* Make it circular */
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px; /* Adjust the position as needed */
+    right: -5px; /* Adjust the position as needed */
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the plus button */
+  .cart-icon::before:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  

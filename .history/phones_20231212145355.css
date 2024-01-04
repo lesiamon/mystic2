@@ -1,0 +1,60 @@
+
+nav ul {
+    list-style: none;
+    margin: 10;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+.images-below-navbar {
+    width: 0px; /* Set the desired width */
+    height: auto; /* Auto-adjust the height to maintain aspect ratio */
+    margin: 10px; /* Add margin to space the images */
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; /* Adjust the height to make the search bar shorter */
+    width: auto;
+    border: 1px solid #ddd; /* Optional border */
+    padding: 5px; /* Optional padding */
+    border-radius: 40px; /* Optional border radius */
+}
+
+.search-input {
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 40px;
+    height: 25px;
+    width: fit-content;
+}
+
+.search-dropdown {
+    flex: 0;
+    tab-size: 30px;
+}
+
+.search-icon {
+    font-size: 20px; /* Adjust the size of the icon as needed */
+    cursor: pointer;
+    color: #fff;
+}
+
+.cart-icon {
+    font-size: 20px; /* Adjust the size of the cart icon as needed */
+    cursor: pointer;
+    margin-left: 10px; /* Add some spacing between the search and cart icons */
+    color: #fff;
+    size: 0cap;
+}
