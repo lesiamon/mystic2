@@ -68,8 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
         buyModal.style.display = 'block';
     }
 
-
-
     function addItemToCart(imageSrc) {
         itemCount++;
         updateCartCount();
@@ -109,48 +107,39 @@ document.addEventListener("DOMContentLoaded", function () {
         alert('You selected Others as your buy option.');
         closeBuyModal();
     }
-});
 
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = 'none';
-}
-
-// Use the function for the buy modal
-function closeBuyModal() {
-    closeModal('buyModal');
-}
-
-// Use the function for the generic modal
-document.getElementById("modal-close-button").addEventListener("click", function() {
-    closeModal('modal');
-});
-
-$(document).ready(function() {
-    // Function to toggle classes based on screen size
-    function toggleClasses() {
-        var screenWidth = $(window).width();
-
-        // Check if the screen width is less than or equal to 767px (small screens)
-        if (screenWidth <= 767) {
-            // Add or remove classes for small screens
-            $("header").addClass("small-screen-header").removeClass("large-screen-header");
-            $(".horizontal-menu").addClass("small-screen-menu").removeClass("large-screen-menu");
-            $(".horizontal-menu li").addClass("small-screen-menu-item").removeClass("large-screen-menu-item");
-        } else {
-            // Add or remove classes for large screens
-            $("header").addClass("large-screen-header").removeClass("small-screen-header");
-            $(".horizontal-menu").addClass("large-screen-menu").removeClass("small-screen-menu");
-            $(".horizontal-menu li").addClass("large-screen-menu-item").removeClass("small-screen-menu-item");
-        }
+    function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = 'none';
     }
 
-    // Initial toggle on page load
-    toggleClasses();
+    // Use the function for the buy modal
+    function closeBuyModal() {
+        closeModal('buyModal');
+    }
 
-    // Re-run toggleClasses on window resize
-    $(window).resize(function() {
-        toggleClasses();
+    // Use the function for the generic modal
+    document.getElementById("modal-close-button").addEventListener("click", function() {
+        closeModal('modal');
     });
-});
 
+    // Function to adjust card widths on window resize
+    function adjustCards() {
+        const cards = document.querySelectorAll('.card');
+        const containerWidth = document.querySelector('.card-container').offsetWidth;
+        const cardGap = 20; // Adjust this value to control card spacing
+
+        const availableCardWidth = containerWidth - (cardGap * (cards.length - 1));
+        const cardWidth = Math.floor(availableCardWidth / cards.length);
+
+        cards.forEach(card => {
+            card.style.flex = '0 1 calc(' + cardWidth + 'px - ' + cardGap + 'px)';
+        });
+    }
+
+    // Initial adjustment on page load
+    adjustCards();
+
+    // Resize event listener
+    window.addEventListener('resize', adjustCards);
+});
