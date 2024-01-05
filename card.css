@@ -108,11 +108,12 @@
     .card-container {
         flex-basis: 100%;
         flex-direction: row;
-        justify-content: flex-start;
+        
     }
 
     .card {
         flex: 0 1 100%;
+        flex-direction: row-reverse;
     }
 }
 
