@@ -113,14 +113,14 @@
 
     .card {
         flex: 0 1 100%;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .card-container {
         flex-basis: 100%;
-        display: flex;
+
     }
 
     .card {
@@ -131,7 +131,7 @@
 @media only screen and (min-width: 1024px) {
     .card-container {
         flex-basis: 30%;
-        display: flex;
+        
     }
 
     .card {
