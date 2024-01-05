@@ -119,27 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Use the function for the generic modal
-    document.getElementById("modal-close-button").addEventListener("click", function() {
+    document.getElementById("modal-close-button").addEventListener("click", function () {
         closeModal('modal');
     });
-
-    // Function to adjust card widths on window resize
-    function adjustCards() {
-        const cards = document.querySelectorAll('.card');
-        const containerWidth = document.querySelector('.card-container').offsetWidth;
-        const cardGap = 20; // Adjust this value to control card spacing
-
-        const availableCardWidth = containerWidth - (cardGap * (cards.length - 1));
-        const cardWidth = Math.floor(availableCardWidth / cards.length);
-
-        cards.forEach(card => {
-            card.style.flex = '0 1 calc(' + cardWidth + 'px - ' + cardGap + 'px)';
-        });
-    }
-
-    // Initial adjustment on page load
-    adjustCards();
-
-    // Resize event listener
-    window.addEventListener('resize', adjustCards);
-});
+})
