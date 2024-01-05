@@ -188,3 +188,36 @@ nav {
     color: var(--black);
     margin: 0 10px;
   }
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 767px) {
+    .card-container {
+        flex-basis: 100%;
+        flex-direction: row;
+        
+    }
+
+    .card {
+        flex: 0 1 100%;
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .card-container {
+        flex-basis: 100%;
+    }
+
+    .card {
+        flex: 0 1 calc(45% - 20px);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card-container {
+        flex-basis: 30%;
+    }
+
+    .card {
+        flex: 0 1 calc(30% - 20px);
+    }
+}
