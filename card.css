@@ -1,3 +1,4 @@
+/* Default styles for card container and cards */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +19,6 @@
     cursor: pointer;
     transition: all 0.3s;
     max-height: 300px;
-    
 }
 
 .card.expanded {
@@ -30,14 +30,13 @@
 
 .card img {
     max-width: 100%;
-    transition: transform 0.5s; 
-    transform: rotate(360deg); /* Apply rotation to the image */
+    transition: transform 0.5s;
+    transform: rotate(360deg);
 }
 
 .card.rotate-180 img {
-    transform: rotate(180deg); /* Apply rotation to the image */
+    transform: rotate(180deg);
 }
-
 
 .card h3 {
     font-size: 1.5em;
@@ -47,6 +46,7 @@
     font-size: 1em;
 }
 
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -55,8 +55,6 @@
     top: 0;
     width: 70%;
     height: auto;
-    
-
 }
 
 .modal-content {
@@ -76,38 +74,61 @@
     cursor: pointer;
 }
 
-/* Style the plus button within the cart link */
+/* Cart icon styles */
 .cart-link {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Style the cart icon */
-  .cart-icon {
+}
+
+.cart-icon {
     font-size: 24px;
-    color: #333; /* Change the color to your preference */
-  }
-  
-  /* Style the plus button */
-  .cart-icon::before {
-    content: "+"; /* Use a plus sign or your preferred symbol */
-    font-size: 20px; /* Adjust the size as needed */
-    color: #fff; /* Change the color to your preference */
-    background-color: #058205; /* Change the background color to your preference */
-    border-radius: 50%; /* Make it circular */
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
+    color: #333;
+}
+
+.cart-icon::before {
+    content: "+";
+    font-size: 20px;
+    color: #fff;
+    background-color: #058205;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -5px; /* Adjust the position as needed */
-    right: -5px; /* Adjust the position as needed */
+    top: -5px;
+    right: -5px;
     cursor: pointer;
-  }
-  
-@media (max-width: 768px) {
-  .card-container {
-    flex-basis: 45%; /* Adjust width for smaller screens */
-  }
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 767px) {
+    .card-container {
+        flex-basis: 100%;
+    }
+
+    .card {
+        flex: 0 1 calc(100% - 20px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .card-container {
+        flex-basis: 45%;
+    }
+
+    .card {
+        flex: 0 1 calc(45% - 20px);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card-container {
+        flex-basis: 30%;
+    }
+
+    .card {
+        flex: 0 1 calc(30% - 20px);
+    }
 }
