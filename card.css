@@ -107,7 +107,7 @@
 @media only screen and (max-width: 767px) {
     .card-container {
         flex-basis: 100%;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
     }
 
