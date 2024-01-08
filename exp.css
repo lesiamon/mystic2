@@ -1,6 +1,6 @@
 nav {
     background-color: rgb(0, 255, 55);
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -188,3 +188,16 @@ nav {
     color: var(--black);
     margin: 0 10px;
   }
+  @media only screen and (max-width: 767px) {
+
+  }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav ul li {
+        font-size: 14px; /* Adjust font size for medium screens if needed */
+    }
+}
+
+/* Large screens (laptops/desktops) */
+@media only screen and (min-width: 1024px) {
+    /* Add any additional styles for large screens here */
+}
