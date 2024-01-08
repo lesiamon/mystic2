@@ -82,12 +82,17 @@ nav a {
         flex-direction: row; /* Display navigation items horizontally on small screens */
         flex-wrap: wrap; /* Allow items to wrap onto a new line if necessary */
         justify-content: space-around; /* Distribute space around navigation items */
+        display: none;
     }
 
     nav ul li {
         margin-right: 0; /* Remove margin between list items on small screens */
         margin-bottom: 10px; /* Add space below each list item */
     }
+
+    nav {
+    display: none; 
+}
 }
 
 /* Medium screens (tablets) */
