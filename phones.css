@@ -259,7 +259,81 @@ nav {
     tab-size: 30px;
 }
 
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+
+  /* Adjust font sizes for better readability */
+  body {
+    font-size: 14px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  /* Ensure images stack in rows where needed */
+  .icons {
+    flex-direction: column;
+  }
+
+  .deals {
+    flex-direction: column;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  /* Adjust product width to fit narrower screen */
+  .product {
+    width: 100%;
+  }
+
+  /* Reduce padding on narrower screens */
+  nav,
+  .icons,
+  .deals {
+    padding: 0 20px;
+  }
+
+  /* Optionally adjust button and image sizes if needed */
+  .banner button {
+    padding: 8px 16px;
+  }
+
+  .button-container img {
+    height: 250px; /* Adjust as needed */
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
+    nav ul {
+        flex-direction: row; /* Display navigation items horizontally on small screens */
+        flex-wrap: wrap; /* Allow items to wrap onto a new line if necessary */
+        justify-content: space-around; /* Distribute space around navigation items */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin between list items on small screens */
+        margin-bottom: 10px; /* Add space below each list item */
+    }
+}
+
+/* Medium screens (tablets) */
+/* Extra small screens (phones) */
+@media only screen and (max-width: 479px) {
+    nav ul {
+        flex-direction: column; /* Display navigation items vertically on extra small screens */
+        align-items: center; /* Center the navigation items */
+    }
+}
+
+/* Small screens (phones) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     nav ul {
         flex-direction: row; /* Display navigation items horizontally on small screens */
         flex-wrap: wrap; /* Allow items to wrap onto a new line if necessary */
@@ -282,4 +356,48 @@ nav {
 /* Large screens (laptops/desktops) */
 @media only screen and (min-width: 1024px) {
     /* Add any additional styles for large screens here */
+}
+
+/* Landscape orientation */
+@media only screen and (orientation: landscape) {
+    nav ul li {
+        padding: 10px; /* Add some padding around list items in landscape mode */
+    }
+}
+
+/* Portrait orientation */
+@media only screen and (orientation: portrait) {
+    nav ul li {
+        padding: 5px; /* Reduce padding around list items in portrait mode */
+    }
+}
+
+/* High resolution screens */
+@media only screen and (min-resolution: 192dpi) {
+    nav ul li {
+        font-weight: bold; /* Make the text bolder on high resolution screens */
+    }
+}
+
+/* Low resolution screens */
+@media only screen and (max-resolution: 72dpi) {
+    nav ul li {
+        font-weight: normal; /* Make the text normal on low resolution screens */
+    }
+}
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black; /* Set the background color to black for dark mode */
+        color: white; /* Set the text color to white for dark mode */
+    }
+}
+
+/* Light mode preference */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white; /* Set the background color to white for light mode */
+        color: black; /* Set the text color to black for light mode */
+    }
 }
