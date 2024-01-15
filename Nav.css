@@ -37,10 +37,6 @@ nav a {
     margin-right: 10px; /* Adjust the spacing between the icon and the categories dropdown */
 }
 
-/* Style the categories dropdown as needed */
-.search-dropdown {
-    /* Your existing styles for the dropdown */
-}
 
 .cart-link {
     color: #fff; /* Text color for the cart link */

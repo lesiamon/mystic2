@@ -163,37 +163,48 @@ nav {
 
 /* Style the button container */
 .button-container {
-    position: relative; /* make it relative to the banner */
-    width: auto; /* adjust the width as needed */
-    height: 300px; /* adjust the height as needed */
-    margin: 0 auto; /* center it horizontally */
-  }
-  
-  /* Style the image */
-  .button-container img {
-    position: absolute; /* make it absolute to the container */
-    top: 0; /* align it to the top of the container */
-    left: 0; /* align it to the left of the container */
-    width: 100%; /* make it fill the container width */
-    height: 100%; /* make it fill the container height */
-    z-index: -1; /* put it behind the button */
-  }
-  
-  .search-icon {
-    font-size: 20px; /* Adjust the size of the icon as needed */
+    position: relative;
+    /* make it relative to the banner */
+    width: auto;
+    /* adjust the width as needed */
+    height: 300px;
+    /* adjust the height as needed */
+    margin: 0 auto;
+    /* center it horizontally */
+}
+
+/* Style the image */
+.button-container img {
+    position: absolute;
+    /* make it absolute to the container */
+    top: 0;
+    /* align it to the top of the container */
+    left: 0;
+    /* align it to the left of the container */
+    width: 100%;
+    /* make it fill the container width */
+    height: 100%;
+    /* make it fill the container height */
+    z-index: -1;
+    /* put it behind the button */
+}
+
+.search-icon {
+    font-size: 20px;
+    /* Adjust the size of the icon as needed */
     cursor: pointer;
     color: #030303;
 }
+
 .search-icon {
     color: var(--black);
     margin: 0 10px;
-  }
-  @media only screen and (max-width: 767px) {
+}
 
-  }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     nav ul li {
-        font-size: 14px; /* Adjust font size for medium screens if needed */
+        font-size: 14px;
+        /* Adjust font size for medium screens if needed */
     }
 }
 

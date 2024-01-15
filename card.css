@@ -35,9 +35,7 @@
     transform: rotate(360deg);
 }
 
-.card.rotate-180 img {
-    transform: rotate(180deg);
-}
+
 
 .card h3 {
     font-size: 1.5em;
@@ -96,23 +94,22 @@
 
 /* Media queries for different screen sizes */
 @media only screen and (max-width: 767px) {
-    .card-container {
-        flex-direction: row;
-        flex-wrap: rap;
-    }
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
 
     .card {
+        flex-direction: row;
+        flex-wrap: rap;
         flex: 0 1 100%;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .card-container {
-        flex-basis: 100%;
-
-    }
-
     .card {
+        display: flex;
+        flex-direction: row;
         flex: 0 1 calc(45% - 20px);
     }
 }
